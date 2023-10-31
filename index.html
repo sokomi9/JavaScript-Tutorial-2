@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Number Methods</h2>
+    <h3>1. toString() Method</h3>
+    <p>The toString() method converts a number to a string.</p>
+    <p>e.g., the toString method will convert 1000 to string</p>
+    <p id="string"></p>
+
+    <h3>2. toExponential() Method</h3>
+    <p>return a string rounded or written in using exponential notation <br>
+    e.g., 9.6456564565 can be written as:</p>
+    <p id="exponential"></p>
+
+    <h3>3. toFixed()</h3>
+    <p>toFixed() method rounds a number to a given number of digits <br/>
+    <br/>
+    The following example shows 9.656635 rounded to a whole number and to 2 and 3 decimal points
+    </p>
+    <p id="fixed"></p>
+
+
+    <script>
+        let x = 1000;
+        document.getElementById("string").innerHTML = x.toString();
+
+        let v=9.6456564565;
+        document.getElementById("exponential").innerHTML=
+        v.toExponential() +  "<br/>" +
+        v.toExponential(1) + "<br/>" +
+        v.toExponential(2) + "<br/>" +
+        v.toExponential(3) + "<br/>" +
+        v.toExponential(4);
+
+        let k = 9.656635
+        document.getElementById("fixed").innerHTML = 
+        k.toFixed(0) + "<br\>" +
+        k.toFixed(2) + "<br\>" +
+        k.toFixed(3);
+
+
+    </script>
+</body>
+</html>
